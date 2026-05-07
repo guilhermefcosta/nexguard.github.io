@@ -1,23 +1,780 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
-  <title>NEXGUARD</title>
-  <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexGuard - Cibersegurança Profissional</title>
+    <meta name="description" content="Auditoria de segurança, pentest e monitoramento contínuo. Proteja sua empresa antes que seja tarde.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Sora:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body style="font-family: Arial; text-align: center; padding: 50px;">
+<body>
 
-  <h1>NEXGUARD Segurança da Informação</h1>
-  
-  <p>Protegendo sistemas, APIs e aplicações contra ameaças reais.</p>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <svg class="logo-shield" viewBox="0 0 40 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 2L4 9v14c0 9.4 6.8 18.2 16 20.4C29.2 41.2 36 32.4 36 23V9L20 2z" fill="url(#shieldGrad)" stroke="rgba(59,130,246,0.4)" stroke-width="1"/>
+                        <path d="M14 22l4 4 8-8" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <defs>
+                            <linearGradient id="shieldGrad" x1="4" y1="2" x2="36" y2="43" gradientUnits="userSpaceOnUse">
+                                <stop offset="0%" stop-color="#3b82f6"/>
+                                <stop offset="100%" stop-color="#1d4ed8"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                    <span class="logo-text">NexGuard</span>
+                </div>
+                <div class="nav-links">
+                    <a href="#services">Serviços</a>
+                    <a href="#pentest-flow">Metodologia</a>
+                    <a href="#risks">Riscos</a>
+                    <a href="#clients">Clientes</a>
+                    <a href="#cta" class="nav-cta">Falar com especialista</a>
+                </div>
+                <button class="nav-toggle" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
 
-  <h2>O que fazemos</h2>
-  <p>Pentest, Diagnóstico de Segurança e Hardening</p>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background">
+            <div class="grid-bg"></div>
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="scan-line"></div>
+        </div>
 
-  <h2>Para quem</h2>
-  <p>Empresas que querem evitar vazamentos e ataques</p>
+        <div class="container hero-content">
+            <div class="hero-text">
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    Proteção Ativa 24/7
+                </div>
+                <h1 class="hero-title">
+                    <span class="word">Proteja</span>
+                    <span class="word">seu</span>
+                    <span class="word">negócio</span><br>
+                    <span class="word danger">antes</span>
+                    <span class="word danger">que</span>
+                    <span class="word danger">seja</span>
+                    <span class="word danger">tarde</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Vulnerabilidades não conhecem limites. Nós sim. Auditoria, pentest e monitoramento contínuo para empresas que levam segurança a sério.
+                </p>
+                <div class="hero-cta">
+                    <a href="https://wa.me/5511999999999?text=Olá! Gostaria de conhecer os serviços de cibersegurança da NexGuard." class="btn btn-primary" target="_blank">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.49"/></svg>
+                        Conversar no WhatsApp
+                    </a>
+                    <a href="https://calendly.com/seu-usuario" class="btn btn-secondary" target="_blank">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                        Agendar Reunião
+                    </a>
+                </div>
+            </div>
 
-  <h2>Contato</h2>
-  <a href="https://wa.me/SEUNUMERO">Fale no WhatsApp</a>
+            <div class="hero-visual">
+                <div class="terminal">
+                    <div class="terminal-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                        <span class="terminal-title">nexguard_scan.sh</span>
+                    </div>
+                    <div class="terminal-body">
+                        <div class="term-line"><span class="prompt">$</span> <span class="cmd">nexguard</span> --scan target.com</div>
+                        <div class="term-line delay-1"><span class="info">[INFO]</span> Iniciando reconhecimento...</div>
+                        <div class="term-line delay-2"><span class="info">[INFO]</span> Mapeando superfície de ataque</div>
+                        <div class="term-line delay-3"><span class="warn">[WARN]</span> CVE-2024-1234 detectada</div>
+                        <div class="term-line delay-4"><span class="warn">[WARN]</span> SQL Injection — porta 443</div>
+                        <div class="term-line delay-5"><span class="danger-text">[CRIT]</span> Credenciais expostas!</div>
+                        <div class="term-line delay-6"><span class="success">[OK]</span>&nbsp;&nbsp; Relatório gerado ✓</div>
+                        <div class="term-cursor delay-6">▌</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number" data-target="300">0</div>
+                    <div class="stat-plus">+</div>
+                    <div class="stat-label">Vulnerabilidades encontradas</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="50">0</div>
+                    <div class="stat-unit">M</div>
+                    <div class="stat-label">Multa máxima LGPD (R$)</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="72">0</div>
+                    <div class="stat-unit">h</div>
+                    <div class="stat-label">Para notificar ANPD após brecha</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="60">0</div>
+                    <div class="stat-plus">%</div>
+                    <div class="stat-label">Das PMEs fecham após ataque</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-tag">O que fazemos</div>
+                <h2>Nossos Serviços</h2>
+                <p>Soluções completas de segurança para sua infraestrutura digital</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon-wrap">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>
+                    </div>
+                    <h3>Auditoria de Segurança</h3>
+                    <p>Análise profunda de sistemas web, APIs, aplicativos mobile e infraestrutura de rede. Identificamos vulnerabilidades antes que se tornem um problema.</p>
+                    <div class="service-features">
+                        <span class="feature">Web &amp; APIs</span>
+                        <span class="feature">Mobile</span>
+                        <span class="feature">Redes</span>
+                        <span class="feature">Relatório detalhado</span>
+                    </div>
+                </div>
+
+                <div class="service-card featured">
+                    <div class="featured-badge">Mais procurado</div>
+                    <div class="service-icon-wrap">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                    </div>
+                    <h3>Teste de Penetração</h3>
+                    <p>Simulação de ataques reais para descobrir pontos fracos. Nossos especialistas tentam invadir seu sistema da mesma forma que hackers fariam.</p>
+                    <div class="service-features">
+                        <span class="feature">Ataque simulado</span>
+                        <span class="feature">Relatório executivo</span>
+                        <span class="feature">Remediação</span>
+                        <span class="feature">Reteste incluído</span>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon-wrap">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    </div>
+                    <h3>Monitoramento Contínuo</h3>
+                    <p>Vigilância 24/7 de vulnerabilidades em sua infraestrutura. Detectamos e alertamos sobre ameaças em tempo real, antes que causem dano.</p>
+                    <div class="service-features">
+                        <span class="feature">Alertas em tempo real</span>
+                        <span class="feature">Dashboard 24/7</span>
+                        <span class="feature">Suporte técnico</span>
+                        <span class="feature">CVEs monitoradas</span>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon-wrap">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                    </div>
+                    <h3>Conformidade LGPD</h3>
+                    <p>Avaliamos e adequamos seus processos para conformidade total com a Lei Geral de Proteção de Dados, evitando multas e sanções.</p>
+                    <div class="service-features">
+                        <span class="feature">Mapeamento de dados</span>
+                        <span class="feature">Gap analysis</span>
+                        <span class="feature">Plano de adequação</span>
+                        <span class="feature">DPO consultivo</span>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon-wrap">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+                    </div>
+                    <h3>Threat Intelligence</h3>
+                    <p>Inteligência de ameaças específica para seu setor. Monitoramos a dark web e fóruns clandestinos em busca de dados da sua empresa.</p>
+                    <div class="service-features">
+                        <span class="feature">Dark web</span>
+                        <span class="feature">Leak detection</span>
+                        <span class="feature">Brand monitoring</span>
+                        <span class="feature">Relatório mensal</span>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon-wrap">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                    </div>
+                    <h3>Treinamento em Segurança</h3>
+                    <p>Capacite sua equipe para reconhecer ataques de phishing, engenharia social e outras ameaças. O fator humano é a maior vulnerabilidade.</p>
+                    <div class="service-features">
+                        <span class="feature">Phishing simulado</span>
+                        <span class="feature">Workshops</span>
+                        <span class="feature">Certificado</span>
+                        <span class="feature">E-learning</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pentest Flow Section -->
+    <section class="pentest-flow" id="pentest-flow">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-tag">Metodologia</div>
+                <h2>Fluxo do Pentest</h2>
+                <p>Do escopo ao relatório final — veja como trabalhamos com transparência e rigor técnico</p>
+            </div>
+
+            <div class="flow-container">
+                <div class="flow-step" data-step="1">
+                    <div class="flow-step-number">01</div>
+                    <div class="flow-step-content">
+                        <div class="flow-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+                        </div>
+                        <h3>Definição de Escopo</h3>
+                        <p>Reunião inicial para definir alvos, limites legais, janelas de teste e objetivos de negócio. Assinatura de NDA e autorização formal.</p>
+                        <div class="flow-tags">
+                            <span>NDA</span><span>Autorização</span><span>Regras</span>
+                        </div>
+                    </div>
+                    <div class="flow-connector"></div>
+                </div>
+
+                <div class="flow-step" data-step="2">
+                    <div class="flow-step-number">02</div>
+                    <div class="flow-step-content">
+                        <div class="flow-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+                        </div>
+                        <h3>Reconhecimento (OSINT)</h3>
+                        <p>Coleta de informações públicas: subdomínios, emails expostos, tecnologias utilizadas, histórico de vazamentos e perfil de infraestrutura.</p>
+                        <div class="flow-tags">
+                            <span>OSINT</span><span>DNS</span><span>Footprinting</span>
+                        </div>
+                    </div>
+                    <div class="flow-connector"></div>
+                </div>
+
+                <div class="flow-step" data-step="3">
+                    <div class="flow-step-number">03</div>
+                    <div class="flow-step-content">
+                        <div class="flow-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/></svg>
+                        </div>
+                        <h3>Varredura e Enumeração</h3>
+                        <p>Mapeamento ativo de portas, serviços, versões e configurações. Identificação de pontos de entrada e superfície de ataque total.</p>
+                        <div class="flow-tags">
+                            <span>Port Scan</span><span>Banner Grab</span><span>CVEs</span>
+                        </div>
+                    </div>
+                    <div class="flow-connector"></div>
+                </div>
+
+                <div class="flow-step" data-step="4">
+                    <div class="flow-step-number">04</div>
+                    <div class="flow-step-content">
+                        <div class="flow-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                        </div>
+                        <h3>Exploração</h3>
+                        <p>Tentativas controladas de exploração das vulnerabilidades encontradas. Simulação real de como um atacante comprometeria o sistema.</p>
+                        <div class="flow-tags">
+                            <span>Exploit</span><span>Privilege Esc.</span><span>Lateral Mov.</span>
+                        </div>
+                    </div>
+                    <div class="flow-connector"></div>
+                </div>
+
+                <div class="flow-step" data-step="5">
+                    <div class="flow-step-number">05</div>
+                    <div class="flow-step-content">
+                        <div class="flow-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+                        </div>
+                        <h3>Relatório Técnico + Executivo</h3>
+                        <p>Documentação completa com evidências, CVSS scoring, impacto no negócio e plano de remediação priorizado por risco.</p>
+                        <div class="flow-tags">
+                            <span>CVSS</span><span>Evidências</span><span>Prioridade</span>
+                        </div>
+                    </div>
+                    <div class="flow-connector"></div>
+                </div>
+
+                <div class="flow-step" data-step="6">
+                    <div class="flow-step-number">06</div>
+                    <div class="flow-step-content">
+                        <div class="flow-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                        </div>
+                        <h3>Reteste e Validação</h3>
+                        <p>Após as correções, realizamos novo teste para confirmar que as vulnerabilidades foram devidamente remediadas. Certificado de reteste incluído.</p>
+                        <div class="flow-tags">
+                            <span>Verificação</span><span>Certificado</span><span>Fechamento</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Risks Section -->
+    <section class="risks" id="risks">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-tag">O que está em jogo</div>
+                <h2>Consequências do Descuido</h2>
+                <p>Entenda o que está em risco quando você não protege sua empresa</p>
+            </div>
+
+            <div class="risks-grid">
+                <div class="risk-card danger">
+                    <div class="risk-icon">📊</div>
+                    <h3>Vazamento de Dados</h3>
+                    <p>Seus clientes, dados financeiros e segredos comerciais expostos na internet. Uma brecha pode custar milhões em confiança perdida.</p>
+                    <div class="risk-impact">Impacto: Financeiro + Reputacional</div>
+                </div>
+
+                <div class="risk-card critical">
+                    <div class="risk-icon">⚖️</div>
+                    <h3>Multa LGPD até R$ 50M</h3>
+                    <p>Violações de privacidade resultam em multas de até R$ 50 milhões ou 2% do faturamento. A ANPD está aplicando sanções ativamente.</p>
+                    <div class="risk-impact">Impacto: Legal + Financeiro</div>
+                </div>
+
+                <div class="risk-card alert">
+                    <div class="risk-icon">💔</div>
+                    <h3>Perda de Reputação</h3>
+                    <p>Uma brecha de segurança destrói a confiança de clientes. Recuperar a reputação leva anos. Seus concorrentes saem ganhando.</p>
+                    <div class="risk-impact">Impacto: Reputacional + Comercial</div>
+                </div>
+
+                <div class="risk-card danger">
+                    <div class="risk-icon">🔐</div>
+                    <h3>Roubo de Identidade</h3>
+                    <p>Criminosos usam dados roubados para abrir contas, fazer compras e cometer fraudes em nome de você ou seus clientes.</p>
+                    <div class="risk-impact">Impacto: Clientes afetados</div>
+                </div>
+
+                <div class="risk-card critical">
+                    <div class="risk-icon">🛑</div>
+                    <h3>Parada de Operações</h3>
+                    <p>Ataques ransomware congelam seus sistemas. Você perde receita a cada minuto offline. 60% das PMEs fecham em 6 meses após ataque.</p>
+                    <div class="risk-impact">Impacto: Receita + Operacional</div>
+                </div>
+
+                <div class="risk-card alert">
+                    <div class="risk-icon">🌐</div>
+                    <h3>Comprometimento Total</h3>
+                    <p>Servidores tomados por bots, redes infectadas, dados manipulados. Você perde controle total da sua operação digital.</p>
+                    <div class="risk-impact">Impacto: Tecnológico + Segurança</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Authority / Certifications Section -->
+    <section class="authority" id="authority">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-tag">Credenciais</div>
+                <h2>Metodologia &amp; Padrões</h2>
+                <p>Trabalhamos com os padrões e frameworks mais reconhecidos do mercado de segurança</p>
+            </div>
+
+            <div class="authority-grid">
+                <div class="authority-card">
+                    <div class="authority-logo">
+                        <svg viewBox="0 0 80 40" fill="none">
+                            <rect x="1" y="1" width="78" height="38" rx="4" stroke="#3b82f6" stroke-width="1.5" fill="rgba(59,130,246,0.05)"/>
+                            <text x="40" y="15" text-anchor="middle" fill="#3b82f6" font-family="Space Mono" font-size="10" font-weight="700">OWASP</text>
+                            <text x="40" y="30" text-anchor="middle" fill="#94a3b8" font-family="Sora" font-size="7">Top 10 Framework</text>
+                        </svg>
+                    </div>
+                    <p>OWASP Top 10</p>
+                </div>
+
+                <div class="authority-card">
+                    <div class="authority-logo">
+                        <svg viewBox="0 0 80 40" fill="none">
+                            <rect x="1" y="1" width="78" height="38" rx="4" stroke="#3b82f6" stroke-width="1.5" fill="rgba(59,130,246,0.05)"/>
+                            <text x="40" y="15" text-anchor="middle" fill="#3b82f6" font-family="Space Mono" font-size="10" font-weight="700">NIST</text>
+                            <text x="40" y="30" text-anchor="middle" fill="#94a3b8" font-family="Sora" font-size="7">Cybersecurity Framework</text>
+                        </svg>
+                    </div>
+                    <p>NIST CSF</p>
+                </div>
+
+                <div class="authority-card">
+                    <div class="authority-logo">
+                        <svg viewBox="0 0 80 40" fill="none">
+                            <rect x="1" y="1" width="78" height="38" rx="4" stroke="#3b82f6" stroke-width="1.5" fill="rgba(59,130,246,0.05)"/>
+                            <text x="40" y="15" text-anchor="middle" fill="#3b82f6" font-family="Space Mono" font-size="9" font-weight="700">ISO 27001</text>
+                            <text x="40" y="30" text-anchor="middle" fill="#94a3b8" font-family="Sora" font-size="7">Information Security</text>
+                        </svg>
+                    </div>
+                    <p>ISO 27001</p>
+                </div>
+
+                <div class="authority-card">
+                    <div class="authority-logo">
+                        <svg viewBox="0 0 80 40" fill="none">
+                            <rect x="1" y="1" width="78" height="38" rx="4" stroke="#3b82f6" stroke-width="1.5" fill="rgba(59,130,246,0.05)"/>
+                            <text x="40" y="15" text-anchor="middle" fill="#3b82f6" font-family="Space Mono" font-size="10" font-weight="700">LGPD</text>
+                            <text x="40" y="30" text-anchor="middle" fill="#94a3b8" font-family="Sora" font-size="7">Lei 13.709/2018</text>
+                        </svg>
+                    </div>
+                    <p>Conformidade LGPD</p>
+                </div>
+
+                <div class="authority-card">
+                    <div class="authority-logo">
+                        <svg viewBox="0 0 80 40" fill="none">
+                            <rect x="1" y="1" width="78" height="38" rx="4" stroke="#3b82f6" stroke-width="1.5" fill="rgba(59,130,246,0.05)"/>
+                            <text x="40" y="15" text-anchor="middle" fill="#3b82f6" font-family="Space Mono" font-size="9" font-weight="700">PCI DSS</text>
+                            <text x="40" y="30" text-anchor="middle" fill="#94a3b8" font-family="Sora" font-size="7">Payment Security</text>
+                        </svg>
+                    </div>
+                    <p>PCI DSS</p>
+                </div>
+
+                <div class="authority-card">
+                    <div class="authority-logo">
+                        <svg viewBox="0 0 80 40" fill="none">
+                            <rect x="1" y="1" width="78" height="38" rx="4" stroke="#3b82f6" stroke-width="1.5" fill="rgba(59,130,246,0.05)"/>
+                            <text x="40" y="15" text-anchor="middle" fill="#3b82f6" font-family="Space Mono" font-size="10" font-weight="700">MITRE</text>
+                            <text x="40" y="30" text-anchor="middle" fill="#94a3b8" font-family="Sora" font-size="7">ATT&amp;CK Framework</text>
+                        </svg>
+                    </div>
+                    <p>MITRE ATT&amp;CK</p>
+                </div>
+
+                <div class="authority-card">
+                    <div class="authority-logo">
+                        <svg viewBox="0 0 80 40" fill="none">
+                            <rect x="1" y="1" width="78" height="38" rx="4" stroke="#10b981" stroke-width="1.5" fill="rgba(16,185,129,0.05)"/>
+                            <text x="40" y="15" text-anchor="middle" fill="#10b981" font-family="Space Mono" font-size="8" font-weight="700">Gov. Federal</text>
+                            <text x="40" y="30" text-anchor="middle" fill="#94a3b8" font-family="Sora" font-size="7">Alinhado ao CTIR.gov</text>
+                        </svg>
+                    </div>
+                    <p>CTIR Gov</p>
+                </div>
+
+                <div class="authority-card">
+                    <div class="authority-logo">
+                        <svg viewBox="0 0 80 40" fill="none">
+                            <rect x="1" y="1" width="78" height="38" rx="4" stroke="#10b981" stroke-width="1.5" fill="rgba(16,185,129,0.05)"/>
+                            <text x="40" y="15" text-anchor="middle" fill="#10b981" font-family="Space Mono" font-size="8" font-weight="700">ANPD</text>
+                            <text x="40" y="30" text-anchor="middle" fill="#94a3b8" font-family="Sora" font-size="7">Conformidade plena</text>
+                        </svg>
+                    </div>
+                    <p>ANPD Compliance</p>
+                </div>
+            </div>
+
+            <!-- Certifications team -->
+            <div class="cert-team">
+                <h3>Certificações da Equipe</h3>
+                <div class="cert-badges">
+                    <div class="cert-badge">
+                        <span class="cert-name">OSCP</span>
+                        <span class="cert-desc">Offensive Security</span>
+                    </div>
+                    <div class="cert-badge">
+                        <span class="cert-name">CEH</span>
+                        <span class="cert-desc">Certified Ethical Hacker</span>
+                    </div>
+                    <div class="cert-badge">
+                        <span class="cert-name">eJPT</span>
+                        <span class="cert-desc">eLearnSecurity</span>
+                    </div>
+                    <div class="cert-badge">
+                        <span class="cert-name">CompTIA Security+</span>
+                        <span class="cert-desc">CompTIA</span>
+                    </div>
+                    <div class="cert-badge">
+                        <span class="cert-name">ISO 27001 LA</span>
+                        <span class="cert-desc">Lead Auditor</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clients Carousel Section -->
+    <section class="clients" id="clients">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-tag">Quem confia em nós</div>
+                <h2>Empresas Atendidas</h2>
+                <p>Trabalhamos com empresas de diferentes portes e setores</p>
+            </div>
+        </div>
+
+        <div class="carousel-wrapper">
+            <div class="carousel-track" id="carouselTrack">
+                <!-- OpinionBox -->
+                <div class="client-logo-card highlight">
+                    <svg viewBox="0 0 160 60" fill="none">
+                        <text x="80" y="38" text-anchor="middle" fill="#f1f5f9" font-family="Sora" font-size="18" font-weight="700">Opinion Box</text>
+                    </svg>
+                    <span class="client-sector">Pesquisa de Mercado</span>
+                </div>
+                <!-- Prodemge -->
+                <div class="client-logo-card highlight">
+                    <svg viewBox="0 0 160 60" fill="none">
+                        <text x="80" y="38" text-anchor="middle" fill="#f1f5f9" font-family="Sora" font-size="18" font-weight="700">Prodemge</text>
+                    </svg>
+                    <span class="client-sector">Tecnologia Gov. MG</span>
+                </div>
+                <!-- Others -->
+                <div class="client-logo-card">
+                    <svg viewBox="0 0 160 60" fill="none">
+                        <text x="80" y="38" text-anchor="middle" fill="#94a3b8" font-family="Sora" font-size="18" font-weight="600">TechCorp</text>
+                    </svg>
+                    <span class="client-sector">Tecnologia</span>
+                </div>
+                <div class="client-logo-card">
+                    <svg viewBox="0 0 160 60" fill="none">
+                        <text x="80" y="38" text-anchor="middle" fill="#94a3b8" font-family="Sora" font-size="18" font-weight="600">FinBank</text>
+                    </svg>
+                    <span class="client-sector">Financeiro</span>
+                </div>
+                <div class="client-logo-card">
+                    <svg viewBox="0 0 160 60" fill="none">
+                        <text x="80" y="38" text-anchor="middle" fill="#94a3b8" font-family="Sora" font-size="18" font-weight="600">HealthData</text>
+                    </svg>
+                    <span class="client-sector">Saúde</span>
+                </div>
+                <div class="client-logo-card">
+                    <svg viewBox="0 0 160 60" fill="none">
+                        <text x="80" y="38" text-anchor="middle" fill="#94a3b8" font-family="Sora" font-size="18" font-weight="600">RetailPro</text>
+                    </svg>
+                    <span class="client-sector">E-commerce</span>
+                </div>
+                <div class="client-logo-card">
+                    <svg viewBox="0 0 160 60" fill="none">
+                        <text x="80" y="38" text-anchor="middle" fill="#94a3b8" font-family="Sora" font-size="18" font-weight="600">EduTech</text>
+                    </svg>
+                    <span class="client-sector">Educação</span>
+                </div>
+                <div class="client-logo-card">
+                    <svg viewBox="0 0 160 60" fill="none">
+                        <text x="80" y="38" text-anchor="middle" fill="#94a3b8" font-family="Sora" font-size="18" font-weight="600">LogiSmart</text>
+                    </svg>
+                    <span class="client-sector">Logística</span>
+                </div>
+                <!-- Duplicates for infinite scroll -->
+                <div class="client-logo-card highlight">
+                    <svg viewBox="0 0 160 60" fill="none">
+                        <text x="80" y="38" text-anchor="middle" fill="#f1f5f9" font-family="Sora" font-size="18" font-weight="700">OpinionBox</text>
+                    </svg>
+                    <span class="client-sector">Pesquisa de Mercado</span>
+                </div>
+                <div class="client-logo-card highlight">
+                    <svg viewBox="0 0 160 60" fill="none">
+                        <text x="80" y="38" text-anchor="middle" fill="#f1f5f9" font-family="Sora" font-size="18" font-weight="700">Prodemge</text>
+                    </svg>
+                    <span class="client-sector">Tecnologia Gov. MG</span>
+                </div>
+                <div class="client-logo-card">
+                    <svg viewBox="0 0 160 60" fill="none">
+                        <text x="80" y="38" text-anchor="middle" fill="#94a3b8" font-family="Sora" font-size="18" font-weight="600">TechCorp</text>
+                    </svg>
+                    <span class="client-sector">Tecnologia</span>
+                </div>
+                <div class="client-logo-card">
+                    <svg viewBox="0 0 160 60" fill="none">
+                        <text x="80" y="38" text-anchor="middle" fill="#94a3b8" font-family="Sora" font-size="18" font-weight="600">FinBank</text>
+                    </svg>
+                    <span class="client-sector">Financeiro</span>
+                </div>
+                <div class="client-logo-card">
+                    <svg viewBox="0 0 160 60" fill="none">
+                        <text x="80" y="38" text-anchor="middle" fill="#94a3b8" font-family="Sora" font-size="18" font-weight="600">HealthData</text>
+                    </svg>
+                    <span class="client-sector">Saúde</span>
+                </div>
+                <div class="client-logo-card">
+                    <svg viewBox="0 0 160 60" fill="none">
+                        <text x="80" y="38" text-anchor="middle" fill="#94a3b8" font-family="Sora" font-size="18" font-weight="600">RetailPro</text>
+                    </svg>
+                    <span class="client-sector">E-commerce</span>
+                </div>
+                <div class="client-logo-card">
+                    <svg viewBox="0 0 160 60" fill="none">
+                        <text x="80" y="38" text-anchor="middle" fill="#94a3b8" font-family="Sora" font-size="18" font-weight="600">EduTech</text>
+                    </svg>
+                    <span class="client-sector">Educação</span>
+                </div>
+                <div class="client-logo-card">
+                    <svg viewBox="0 0 160 60" fill="none">
+                        <text x="80" y="38" text-anchor="middle" fill="#94a3b8" font-family="Sora" font-size="18" font-weight="600">LogiSmart</text>
+                    </svg>
+                    <span class="client-sector">Logística</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-us">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-tag">Diferenciais</div>
+                <h2>Por que a NexGuard?</h2>
+                <p>Experiência, metodologia e comprometimento com sua segurança</p>
+            </div>
+
+            <div class="features-list">
+                <div class="feature-item">
+                    <div class="feature-number">01</div>
+                    <div class="feature-content">
+                        <h3>Equipe com certificações internacionais</h3>
+                        <p>Profissionais com OSCP, CEH e outras certificações reconhecidas globalmente. Não somos amadores — somos especialistas.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-number">02</div>
+                    <div class="feature-content">
+                        <h3>Metodologia OWASP + NIST + MITRE ATT&amp;CK</h3>
+                        <p>Seguimos os padrões internacionais mais rigorosos. Cada teste é reproduzível, auditável e documentado.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-number">03</div>
+                    <div class="feature-content">
+                        <h3>Relatórios que executivos entendem</h3>
+                        <p>Entregamos dois documentos: técnico (para o time de TI) e executivo (para a diretoria). Sem jargão desnecessário.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-number">04</div>
+                    <div class="feature-content">
+                        <h3>Reteste incluso sem custo extra</h3>
+                        <p>Verificamos que as vulnerabilidades foram corrigidas antes de fechar o projeto. Entregamos um certificado de reteste.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-tag">Dúvidas</div>
+                <h2>Perguntas Frequentes</h2>
+            </div>
+            <div class="faq-list">
+                <details class="faq-item">
+                    <summary>O pentest vai derrubar meu sistema?</summary>
+                    <p>Não. Todo o processo é planejado e acordado previamente. Definimos juntos as janelas de teste, limitações e o que pode ou não ser feito. Qualquer ação destrutiva é previamente autorizada ou evitada.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Qual o prazo para receber o relatório?</summary>
+                    <p>Dependendo do escopo, entre 5 e 15 dias úteis. Relatórios preliminares com vulnerabilidades críticas são entregues imediatamente ao serem encontradas.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Minha empresa é pequena — preciso mesmo de pentest?</summary>
+                    <p>Sim. 43% dos ataques cibernéticos miram PMEs justamente porque elas têm menos defesa. Hackers usam ferramentas automatizadas que não distinguem tamanho de empresa.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Como funciona a LGPD para minha empresa?</summary>
+                    <p>Toda empresa que coleta, armazena ou processa dados pessoais de brasileiros está sujeita à LGPD — independente do tamanho. Multas chegam a R$ 50 milhões ou 2% do faturamento.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>O serviço é confidencial?</summary>
+                    <p>Absolutamente. Assinamos NDA antes de qualquer levantamento de informações. Todos os dados, relatórios e descobertas são tratados com sigilo absoluto.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Final Section -->
+    <section class="cta-final" id="cta">
+        <div class="container">
+            <div class="cta-content">
+                <div class="cta-urgency">⚠️ Não espere um ataque acontecer</div>
+                <h2>Cada dia sem proteção é um risco calculado</h2>
+                <p>Empresas que sofreram ataques pagaram em média R$ 1,2 milhão em prejuízos. Nossa auditoria custa uma fração disso.</p>
+                <div class="cta-buttons">
+                    <a href="https://wa.me/5511999999999?text=Olá! Gostaria de conhecer os serviços de cibersegurança da NexGuard." class="btn btn-primary btn-large" target="_blank">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.49"/></svg>
+                        Conversar no WhatsApp
+                    </a>
+                    <a href="https://calendly.com/seu-usuario" class="btn btn-secondary btn-large" target="_blank">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                        Agendar Reunião
+                    </a>
+                </div>
+                <div class="cta-guarantee">
+                    🔒 NDA assinado antes de qualquer conversa &nbsp;·&nbsp; Confidencialidade garantida &nbsp;·&nbsp; Sem compromisso
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo" style="margin-bottom:1rem">
+                        <svg class="logo-shield" viewBox="0 0 40 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 2L4 9v14c0 9.4 6.8 18.2 16 20.4C29.2 41.2 36 32.4 36 23V9L20 2z" fill="url(#shieldGrad2)" stroke="rgba(59,130,246,0.4)" stroke-width="1"/>
+                            <path d="M14 22l4 4 8-8" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <defs>
+                                <linearGradient id="shieldGrad2" x1="4" y1="2" x2="36" y2="43" gradientUnits="userSpaceOnUse">
+                                    <stop offset="0%" stop-color="#3b82f6"/>
+                                    <stop offset="100%" stop-color="#1d4ed8"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <span class="logo-text">NexGuard</span>
+                    </div>
+                    <p>Cibersegurança profissional para empresas que levam segurança a sério.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Serviços</h4>
+                    <a href="#services">Auditoria de Segurança</a>
+                    <a href="#services">Pentest</a>
+                    <a href="#services">Monitoramento Contínuo</a>
+                    <a href="#services">Conformidade LGPD</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <p>📧 contato@nexguard.com.br</p>
+                    <p>📱 (11) 9999-9999</p>
+                    <div class="footer-links">
+                        <a href="#services">Serviços</a>
+                        <a href="#pentest-flow">Metodologia</a>
+                        <a href="#cta">Fale Conosco</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 NexGuard Cibersegurança. Todos os direitos reservados.</p>
+                <p class="footer-disclaimer">As informações desta página são para fins informativos. Todos os testes são realizados com autorização prévia e por escrito.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
